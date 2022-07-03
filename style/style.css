@@ -1,0 +1,28 @@
+
+body {
+    background: linear-gradient(10deg, black, purple);
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: black;
+}
+input{
+    display: block;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+
+html{
+    color: white;
+}
+
+span{
+    font-size: small;
+}
