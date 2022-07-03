@@ -1,3 +1,7 @@
+<?php 
+    require_once "../Login/classes/usr.php";
+    $u = new usr;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,5 +34,38 @@
     </div>
     <script src="./JS/script.js">
     </script>
+<?php
+//verificando se clicou no botão
+isset($_POST['nome']);
+{
+    
+    $nome = addslashes($_POST["nome"]);
+    $email = addslashes($_POST["Email"]);
+    $senha = addslashes($_POST["pass"]);
+    $confirmSenha = addslashes($_POST["confirm_pass"]);
+    
+    //verificando se o campo está vazio
+    if(!empty($nome) && !empty($email) && !empty($senha) && !empty($confirmSenha))
+    {
+        $u->conect("general","localhost","root","");
+        if($u->msgErro == ""){// resultado ideal
+            if($senha == $confirmSenha){
+                if($u->cadastrar($nome,$email,$senha)){
+                    echo "Cadastrado com sucesso! Acesse a página de login para entrar na sua conta";
+                }else{
+                    echo "Email já cadastrado";
+                }
+            }else{
+                echo "Senhas não conrespondem!";
+            }
+        }
+        else{
+            echo "Erro: ".$u->msgErro;
+        }
+    }else {
+        echo "Preencha todos os campos";
+    }
+}
+?>
 </body>
 </html>

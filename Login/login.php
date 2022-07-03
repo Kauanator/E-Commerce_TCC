@@ -12,7 +12,7 @@
     <h1>Faça Login :)</h1>
     <div class="container">
         <form method="POST">
-            <input type="email" name="email" id="email" placeholder="Insira seu E-mail">
+            <input type="email" name="Email" id="email" placeholder="Insira seu E-mail">
             <input type="password" placeholder="inserir senha" name="senha">
             <input type="submit" value="entrar">
                 <p>Não tem cadastrado?
