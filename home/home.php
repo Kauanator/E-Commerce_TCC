@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,10 @@
 </head>
 <body>
     <header>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+       <a href="">Logo</a> <!-- usar arquivo .SVG se possível -->
+       <ul>
+        <li></li>
+       </ul>
     </header>
 </body>
 </html>
