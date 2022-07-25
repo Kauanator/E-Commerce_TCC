@@ -26,3 +26,9 @@ html{
 span{
     font-size: small;
 }
+
+input#check{
+    width: 15px;
+    height: 15px;
+    display: flex;
+}
