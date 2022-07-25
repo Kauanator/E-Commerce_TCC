@@ -22,14 +22,19 @@
             <div id="correctMail"></div>
             <input type="email" name="confirmEmail" onkeyup="verifyEmail()" id="email" placeholder="confirme seu e-mail" maxlength="40"> <!--required-->
 
+
             <div id='errorPassForce'></div>
             <input type="password" name="pass" id="passForce" onkeyup="validPassForce()" placeholder="crie uma senha" maxlength="15"> <!--required-->
-
+            <div id="show">
+            <input type="checkbox" id="check" onclick="showPass()"><p id="p1">Mostrar senha</p>
+        </div>
             <div id="congrats"></div>
-            <input type="password" name="confirm_pass" id="" onkeyup="verifyPass()" placeholder="confirme sua senha" > <!--required-->
+            <input type="password" name="confirm_pass" id="" onkeyup="verifyPass()" placeholder="confirme sua senha" >  <!--required-->
             
             <input type="submit" id="btn" onclick="verifyPass()" value="Cadastrar">
-            
+            <!--
+                ***adicionar o required a cada input***
+            -->
         </form>
     </div>
     <script src="./JS/script.js">

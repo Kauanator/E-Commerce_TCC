@@ -83,3 +83,12 @@ function verifyEmail(){
         return false;
     }
 }
+
+function showPass(){
+    var tipo = document.getElementById('passForce')
+    if(tipo.type == "password" ){
+        tipo.type = 'text';
+    }else{
+        tipo.type = 'password'
+    }
+  }
