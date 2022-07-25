@@ -35,7 +35,7 @@ class usr{
 
     public function logar($email, $senha){
         global $pdo;
-        $sql-> prepare("SELECT id_user FROM users WHERE email = :e AND senha = :s");
+        $sql = $pdo-> prepare("SELECT id_user FROM users WHERE email = :e AND senha = :s");
         $sql-> bindValue(":e", $email);
         $sql-> bindValue(":s", md5($senha));
         $sql->execute();
