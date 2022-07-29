@@ -10,7 +10,7 @@
     <header>
        <a href="">Logo</a> <!-- usar arquivo .SVG se possível -->
        <ul>
-        <li>Olá vadias, e vadios</li>
+        <li>Olá</li>
        </ul>
     </header>
 </body>
